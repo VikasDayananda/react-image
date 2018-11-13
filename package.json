@@ -10,12 +10,12 @@
   },
   "scripts": {
     "build": "webpack --config webpack.config.babel.js",
-    "build-examples": "webpack --config examples/webpack.config.babel.js --progress",
+    "build-examples": "webpack --config docs/webpack.config.babel.js --progress",
     "clean": "del -rf dist coverage",
     "coverage": "jest --coverage",
     "lint": "eslint ./src",
     "prepublish": "npm run clean && npm run build",
-    "start": "webpack-dev-server --config examples/webpack.config.live.babel.js"
+    "start": "webpack-dev-server --config docs/webpack.config.live.babel.js"
   },
   "jest": {
     "coverageReporters": [
