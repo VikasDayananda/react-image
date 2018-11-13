@@ -8,13 +8,16 @@ class Example extends React.Component {
   }
 
 
-
   componentDidMount() {}
 
   render() {
     return (
       <div>
-        <MyComponent name='Jack' image={"http://www.tompetty.com/sites/g/files/g2000007521/f/sample001.jpg"}/>
+        <MyComponent
+          name='Jack'
+          //width={"50%"}
+          //height={"50%"}
+          src={"http://www.tompetty.com/sites/g/files/g2000007521/f/sample001.jpg"}/>
       </div>
     );
   }
